@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* @font-face {
+  font-family: myFirstFont;
+  src: url ("assets/fonts/HelveticaNeue.ttc");
+}
+
+* {
+  font-family: myFirstFont;
+} */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logo {
+  width: 11.5rem;
+  height: 2rem;
+  margin-top: 8rem;
+}
+
+.main-img {
+  width: 78rem;
+  height: 48rem;
+  margin-top: 8.5rem;
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  padding: 1.8rem 8rem;
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+  background-color: #62a1eb;
+}
+
+.btn-first {
+  margin-top: 13rem;
+}
+.btn-second {
+  margin-top: 2.6rem;
+}
