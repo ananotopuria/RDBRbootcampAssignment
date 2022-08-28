@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Tech product(s) registration page for Redberry's employees."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="prsninfo.css" />
+  </head>
+  <body>
+    <header>
+      <button class="btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          class="btn-icon"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </button>
+      <div class="container">
+        <p class="prs-info step">თანამშრომლის ინფო</p>
+        <p class="key-specs step">ლეპტოპის მახასიათებლები</p>
+      </div>
+    </header>
+    <main>
+      <section class="cta">
+        <form class="cta-form-full" action="#">
+          <div class="name">
+            <label for="name">სახელი</label>
+            <input id="name" type="text" placeholder="გრიშა" />
+            <p>მინიმუმ 2 სიმბოლო, ქართული ასოები</p>
+          </div>
+          <div class="surname">
+            <label for="surname">გვარი</label>
+            <input id="surname" type="text" placeholder="ბაგრატიონი" />
+            <p>მინიმუმ 2 სიმბოლო, ქართული ასოები</p>
+          </div>
+        </form>
+        <div class="select-container">
+          <select class="team">
+            <option value="">დეველოპმენტი</option>
+            <option value="">HR</option>
+            <option value="">გაყიდვები</option>
+            <option value="">დიზაინი</option>
+            <option value="">მარკეტინგი</option>
+          </select>
+          <select class="position">
+            <option value="">პოზიცია</option>
+          </select>
+        </div>
+
+        <!-- email number -->
+
+        <form class="cta-form-contact" action="#">
+          <div class="email">
+            <label for="email">მეილი</label>
+            <input id="email" type="email" placeholder="grish666@redberry.ge" />
+            <p>უნდა მთავრდებოდეს @redberry.ge-თი</p>
+          </div>
+          <div class="number">
+            <label for="number">ტელეფონის ნომერი</label>
+            <input id="number" type="text" />
+            <p>უნდა აკმაყოფილებდეს ქართული მობ-ნომრის ფორმატს</p>
+          </div>
+        </form>
+        <div class="next-btn">
+          <button class="next">შემდეგი</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="logo">
+        <img
+          class="rdbr-logo"
+          src="/personalinfo/img/LOGO-102.png"
+          alt="redberry logo"
+        />
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,191 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: HelveticaNeue;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("/assets/fonts/HelveticaNeue.ttc");
+}
+
+body {
+  position: relative;
+  background-color: #f7f7f7;
+}
+
+/* Header */
+
+.btn {
+  background-color: #d9d9d9;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 3rem;
+  left: 5rem;
+}
+
+.btn-icon {
+  height: 20px;
+  width: 27px;
+  color: #2e2e2e;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+  margin-bottom: 2rem;
+}
+
+.step {
+  font-weight: bold;
+  font-size: 15px;
+  color: #232323;
+  line-height: 24px;
+  margin-top: 4rem;
+}
+
+.prs-info:after {
+  content: ""; /* This is necessary for the pseudo element to work.*/
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto; /* This will center the border. */
+  width: 80%; /* Change this to whatever width you want. */
+  padding-top: 15px; /* This creates some space between the element and the border. */
+  border-bottom: 1px solid #000; /* This creates the border. Replace black with whatever color you want. */
+}
+
+.key-specs:after {
+  content: ""; /* This is necessary for the pseudo element to work.*/
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto; /* This will center the border. */
+  width: 80%; /* Change this to whatever width you want. */
+  padding-top: 15px; /* This creates some space between the element and the border. */
+  border-bottom: 1px solid #f7f7f7; /* This creates the border. Replace black with whatever color you want. */
+}
+
+/* CTA */
+.cta {
+  background-color: #fff;
+  width: 102.6rem;
+  height: 75rem;
+  margin: 0 auto;
+}
+
+.cta-form-full {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  padding: 5.6rem;
+  font-size: 1.6rem;
+}
+
+.name label,
+.surname label,
+.email label,
+.number label {
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  color: #000;
+  font-weight: bold;
+}
+
+.name input,
+.surname input,
+.email input,
+.number input {
+  border: 1px solid #8ac0e2;
+  border-radius: 8px;
+  margin-top: 1rem;
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.name p,
+.surname p,
+.email p,
+.number p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #2e2e2e;
+}
+
+.name,
+.surname {
+  flex: 0 1 400px;
+}
+
+.select-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.position,
+.team {
+  align-self: center;
+  width: 83%;
+  border: none;
+  border-radius: 8px;
+  padding: 1.2rem;
+  color: #000;
+  background-color: #ebebeb;
+  font-weight: bold;
+}
+
+.cta-form-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding-top: 6rem;
+  font-size: 1.6rem;
+  margin-bottom: 3rem;
+}
+
+.email,
+.number {
+  align-self: center;
+  width: 82%;
+}
+
+/* next btn */
+.next-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+.next {
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #62a1eb;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 12px 28px;
+  margin-right: 9rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* footer */
+.logo {
+  display: flex;
+  justify-content: center;
+}
+.rdbr-logo {
+  margin-top: 2rem;
+  width: 7rem;
+  height: 7rem;
+}
