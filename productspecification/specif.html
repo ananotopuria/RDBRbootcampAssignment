@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Tech product(s) registration page for Redberry's employees."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/productspecification/specif.css" />
+    <script defer src="specif.js"></script>
+  </head>
+  <body>
+    <header>
+      <button class="btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          class="btn-icon"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </button>
+      <div class="container">
+        <p class="prs-info step">თანამშრომლის ინფო</p>
+        <p class="key-specs step">ლეპტოპის მახასიათებლები</p>
+      </div>
+    </header>
+    <main>
+      <section class="cta">
+        <div class="area">
+          <label for="upload">
+            <span class="upload-txt"
+              >ჩააგდე ან ატვირთე <br />
+              ლეპტოპის ფოტო</span
+            ><input type="file" id="upload" /><br />
+          </label>
+        </div>
+      </section>
+      <section class="product-info">
+        <form class="cta-form-specif" action="#">
+          <div class="product-name">
+            <label for="product-name">ლეპტოპის სახელი</label>
+            <input id="product-name" type="text" placeholder="HP" />
+            <p>ლათინური ასოები, ციფრები, !@#$%^&*()_+=</p>
+          </div>
+          <select class="brand">
+            <option class="opt" value="">razer</option>
+            <option class="opt" value="">lenovo</option>
+            <option class="opt" value="">mac</option>
+          </select>
+        </form>
+        <div class="hline"></div>
+      </section>
+    </main>
+    <footer>
+      <div class="logo">
+        <img
+          class="rdbr-logo"
+          src="/personalinfo/img/LOGO-102.png"
+          alt="redberry logo"
+        />
+      </div>
+    </footer>
+  </body>
+</html>

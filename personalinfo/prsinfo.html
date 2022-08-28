@@ -9,10 +9,12 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="prsninfo.css" />
+    <script defer src="../index.js"></script>
+    <script defer src="prsinfo.js"></script>
   </head>
   <body>
     <header>
-      <button class="btn">
+      <button class="btn btn-back">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
@@ -63,17 +65,22 @@
         <form class="cta-form-contact" action="#">
           <div class="email">
             <label for="email">მეილი</label>
-            <input id="email" type="email" placeholder="grish666@redberry.ge" />
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="grish666@redberry.ge"
+            />
             <p>უნდა მთავრდებოდეს @redberry.ge-თი</p>
           </div>
           <div class="number">
             <label for="number">ტელეფონის ნომერი</label>
-            <input id="number" type="text" />
+            <input id="number" name="number" type="text" />
             <p>უნდა აკმაყოფილებდეს ქართული მობ-ნომრის ფორმატს</p>
           </div>
         </form>
         <div class="next-btn">
-          <button class="next">შემდეგი</button>
+          <button class="next submit-form">შემდეგი</button>
         </div>
       </section>
     </main>
