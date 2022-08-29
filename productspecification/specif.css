@@ -82,7 +82,7 @@ body {
 .product-info {
   background-color: #fff;
   width: 102.6rem;
-  height: 90rem;
+  height: 100rem;
   margin: 0 auto;
 }
 /* drag and drop area */
@@ -130,21 +130,34 @@ body {
   margin-top: 10rem;
 }
 
-.cta-form-specif {
+.cta-form-specif,
+.cpu,
+.details {
   display: flex;
   justify-content: center;
+  justify-content: space-between;
   gap: 5rem;
   padding: 5.6rem;
   font-size: 1.6rem;
 }
-.product-name label {
+.product-name label,
+.core label,
+.threads label,
+.ram label,
+.price label,
+.date label {
   padding-top: 1rem;
   margin-bottom: 1rem;
   font-size: 1.6rem;
   color: #000;
   font-weight: bold;
 }
-.product-name input {
+.product-name input,
+.core input,
+.threads input,
+.ram input,
+.price input,
+.date input {
   border: 1px solid #8ac0e2;
   border-radius: 8px;
   margin-top: 1rem;
@@ -153,13 +166,18 @@ body {
   font-size: 1.6rem;
   color: rgba(0, 0, 0, 0.6);
 }
-.product-name p {
+.product-name p,
+.core p,
+.threads p,
+.ram p,
+.price p {
   margin-top: 1rem;
   font-size: 1.2rem;
   color: #2e2e2e;
 }
 
-.brand {
+.brand,
+.cpus {
   flex: 0 1 40rem;
   padding: 1.2rem;
   font-size: 1.6rem;
@@ -173,10 +191,24 @@ body {
 
 .hline {
   align-self: center;
-  margin-left: 10rem;
-  width: 80%;
+  margin-left: 6rem;
+  width: 90%;
   height: 1px;
   background: #c7c7c7;
+}
+.gb {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5rem;
+  padding: 5.6rem;
+  font-size: 1.6rem;
+}
+
+.condition {
+  display: flex;
+  font-size: 1.6rem;
+  margin-left: 5rem;
+  gap: 2rem;
 }
 
 /* footer */
@@ -190,4 +222,65 @@ body {
   margin-top: 2rem;
   width: 7rem;
   height: 7rem;
+}
+
+.btns-for-last-p {
+  display: flex;
+  justify-content: space-between;
+}
+
+.back-btn {
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #fff;
+  color: #62a1eb;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 4rem;
+  margin-left: 5rem;
+}
+
+.save-btn {
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #62a1eb;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 12px 28px;
+  margin-right: 9rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* classes to make modal work */
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  background-color: #fff;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4a4a4a;
 }

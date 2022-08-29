@@ -26,3 +26,5 @@ window.onload = function () {
     numberElem.value = number;
   }
 };
+
+redirectToPage(".submit-form", "/productspecification/specif.html");

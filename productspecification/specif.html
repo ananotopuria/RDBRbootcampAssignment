@@ -13,7 +13,7 @@
   </head>
   <body>
     <header>
-      <button class="btn">
+      <button class="btn back-info">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
@@ -57,7 +57,66 @@
           </select>
         </form>
         <div class="hline"></div>
+        <form class="cpu">
+          <select class="cpus">
+            <option class="opt" value="">ცპუ</option>
+            <option class="opt" value="">ცპუ</option>
+            <option class="opt" value="">ცპუ</option>
+          </select>
+          <div class="core">
+            <label for="core">CPU-ს ბირთვი</label>
+            <input id="core" name="core" type="text" placeholder="HP" />
+            <p>მხოლოდ ციფრები</p>
+          </div>
+          <div class="threads">
+            <label for="threads">CPU-ს ნაკადი</label>
+            <input id="threads" name="v" type="text" placeholder="HP" />
+            <p>მხოლოდ ციფრები</p>
+          </div>
+        </form>
+        <form class="gb">
+          <div class="ram">
+            <label for="ram">ლეპტოპის RAM (GB)</label>
+            <input id="ram" name="ram" type="text" placeholder="16" />
+            <p>მხოლოდ ციფრები</p>
+          </div>
+          <div class="storage">
+            <label for="ssd">SSD</label>
+            <input type="radio" id="ssd" name="ssd" value="ssd" />
+            <label for="hdd">HDD</label>
+            <input type="radio" id="hdd" name="hdd" value="hdd" />
+          </div>
+        </form>
+        <div class="hline"></div>
+        <form class="details">
+          <div class="date">
+            <label for="date">შეძენის რიცხვი (არჩევითი)</label>
+            <input id="date" name="date" type="text" placeholder="HP" />
+          </div>
+          <div class="price">
+            <label for="price">ლეპტოპის ფასი</label>
+            <input id="price" name="price" type="text" placeholder="HP" />
+            <p>მხოლოდ ციფრები</p>
+          </div>
+        </form>
+        <div class="condition">
+          <label for="new">ახალი</label>
+          <input type="radio" id="new" name="new" value="new" />
+          <label for="sec">მეორადი</label>
+          <input type="radio" id="sec" name="sec" value="sec" />
+        </div>
+        <div class="btns-for-last-p">
+          <button class="back-btn">უკან</button>
+          <button class="save-btn">დამახსოვრება</button>
+        </div>
       </section>
+      <div class="modal hidden">
+        <img src="/personalinfo/img/Frame.png" alt="Party paper shoot image" />
+        <h1>ჩანაწერი დამატებულია!</h1>
+        <button class="go-to-list">სიაში გადაყვანა</button>
+        <button class="back-to-main">მთავარი</button>
+      </div>
+      <div class="overlay hidden"></div>
     </main>
     <footer>
       <div class="logo">
